@@ -11,3 +11,17 @@ body {
   background: var(--mainDark) !important;
   color: var(--mainWhite) !important;
 }
+
+.text-title {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--lightBlue);
+}
+
+.text-bright {
+  color: var(--mainYellow);
+}
