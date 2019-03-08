@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
+import { storeProducts } from '../data';
+import { ProductConsumer } from '../context';
 
 export class ProductList extends Component {
   state = {
-    products: []
+    products: storeProducts
   };
   render() {
+    console.log(this.state.products);
     return (
       <React.Fragment>
         <div className="py-5">
           <div className="container">
             <Title name="Latest" title="Products" />
-            <div className="row">F to pay Respects</div>
+            <div className="row">
+              <ProductConsumer>{value => <h1>{value}</h1>}</ProductConsumer>
+            </div>
             <Product />
           </div>
         </div>
